@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Innovation Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Digital Hub</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Digital Presence</h1>
+            <p>Creating innovative solutions for the modern web</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h2>Mobile First</h2>
+                <p>Optimized for all devices and screen sizes</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h2>Clean Code</h2>
+                <p>Built with modern web standards</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-rocket"></i>
+                <h2>Fast Loading</h2>
+                <p>Optimized for maximum performance</p>
+            </div>
+        </section>
+
+        <section class="content-grid">
+            <div class="grid-item">
+                <img src="images/dlsol.jpg" alt="Tech">
+                <h3>Digital Solutions</h3>
+                <p>Innovative tech solutions for modern businesses</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/cd.jpg" alt="Design">
+                <h3>Creative Design</h3>
+                <p>Beautiful and functional design that converts</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/webdev.jpg" alt="Web">
+                <h3>Web Development</h3>
+                <p>Custom web solutions for your business</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/mobiledev.jpg" alt="Mobile">
+                <h3>Mobile Apps</h3>
+                <p>Native and cross-platform mobile applications</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Innovation Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="slideshow">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="images/nature.jpg" alt="Nature">
+                </div>
+                <div class="slide">
+                    <img src="images/arc.jpg" alt="Architecture">
+                </div>
+                <div class="slide">
+                    <img src="images/tech.jpg" alt="Technology">
+                </div>
+                <div class="slide">
+                    <img src="images/travel.jpg" alt="Travel">
+                </div>
+            </div>
+            <div class="slide-nav">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="slide-dots"></div>
+        </section>
+
+        <h2>Image Gallery</h2>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/nature.jpg" alt="Nature">
+            </div>
+            <div class="gallery-item">
+                <img src="images/city.jpg" alt="City">
+            </div>
+            <div class="gallery-item">
+                <img src="images/tech.jpg" alt="Technology">
+            </div>
+            <div class="gallery-item">
+                <img src="images/arc.jpg" alt="Architecture">
+            </div>
+            <div class="gallery-item">
+                <img src="images/travel.jpg" alt="Travel">
+            </div>
+            <div class="gallery-item">
+                <img src="images/food.jpg" alt="Food">
+            </div>
+        </div>
+
+        <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
